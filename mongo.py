@@ -23,6 +23,7 @@ def save_file(filename):
         return "done: %s \n" % filename
 
 
+# Supported by TANDEM6
 @app.route('/pdf/<path:filename>', methods=['GET'])
 def read_file(filename):
         filedb = mongo.db.files
