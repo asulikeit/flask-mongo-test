@@ -24,7 +24,7 @@ Test environment: Ubuntu 16.04
 	git clone https://github.com/asulikeit/flask-mongo-test.git
 	
 ### run python server
-	source venv/env/activate
+	source venv/bin/activate
 	cd flask-mongo-test
 	python3 mongo.py
 	
