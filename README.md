@@ -11,15 +11,15 @@ Test environment: Ubuntu 16.04
 	
 ### install git
 	sudo apt install git
-	
+
+### clone this repository
+	git clone https://github.com/asulikeit/flask-mongo-test.git
+
 ### install python libraries
 	pip3 install virtualenv
 	virtualenv -p python3 venv
 	
 	pip3 install -r requirements.txt
-	
-### clone this repository
-	git clone https://github.com/asulikeit/flask-mongo-test.git
 	
 ### run python server
 	source venv/bin/activate
