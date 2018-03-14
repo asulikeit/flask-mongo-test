@@ -16,9 +16,7 @@ Test environment: Ubuntu 16.04
 	pip3 install virtualenv
 	virtualenv -p python3 venv
 	
-	pip3 install Flask
-	pip3 install Flask-PyMongo
-	pip3 install tika
+	pip3 install -r requirements.txt
 	
 ### clone this repository
 	git clone https://github.com/asulikeit/flask-mongo-test.git
@@ -26,11 +24,12 @@ Test environment: Ubuntu 16.04
 ### run python server
 	source venv/bin/activate
 	cd flask-mongo-test
-	python3 mongo.py
+	python3 main.py
 	
 ### curl test
 	curl -X POST "http://192.168.0.199:5000/pdf/home/daniel/flask/korean.rdf"
-	curl "http://192.168.0.199:5000/pdf/home/daniel/flask/korean.rdf"	
+	curl "http://192.168.0.199:5000/pdf/home/daniel/flask/korean.rdf"
+	curl -X POST "http://192.168.0.199:5000/doc/home/daniel/flask/korean.docx"
 	
 ### Reference
 	https://asulikeit.gitbooks.io/developer/content/chapter1/tika-environment.html
